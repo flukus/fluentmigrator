@@ -197,6 +197,8 @@
     <Compile Include="IQuerySchema.cs" />
     <Compile Include="ProfileAttribute.cs" />
     <Compile Include="SystemMethods.cs" />
+    <Compile Include="Builders\Create\UmbracoCreateExpressionRoot.cs" />
+    <Compile Include="UmbracoMigration.cs" />
     <Compile Include="VersionTableInfo\DefaultVersionTableMetaData.cs" />
     <Compile Include="VersionTableInfo\IVersionTableMetaData.cs" />
     <Compile Include="MigrationTraitAttribute.cs" />
