@@ -8,7 +8,17 @@ namespace FluentMigrator.Tests.Integration.Migrations.Umbraco {
 	public class _201012203016_CreateDocumentType : UmbracoMigration {
 		public override void Up() {
 			Create.DocumentType("MyDocumentType")
-				.WithProperty("SomeProperty")
+				.Alias("myDocType")
+				.MasterDocumentType("MyMaster")
+				.Icon("")
+				.Thumbnail("")
+				.Description("")
+				.DefaultTemplate("")
+				.WithAllowedTemplate("")
+				.WithAllowedChildDocumentType("")
+				//add a tab
+				.WithTab("Properties Tab", 3)
+				.WithProperty("SomeProperty").Alias("sProperty").Type("Text").Mandatory().Tab("Properties Tab").Validation("").Description("")
 			;
 		}
 

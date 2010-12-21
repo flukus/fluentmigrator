@@ -8,7 +8,7 @@ using FluentMigrator.Builders.Create;
 namespace FluentMigrator {
 	public abstract class UmbracoMigration : Migration {
 		public IUmbracoCreateExpressionRoot Create {
-			get { return new UmbracoCreateExpressionRoot(_context); }
+			get { return new UmbracoCreateExpressionRoot(Context); }
 		}
 	}
 }
