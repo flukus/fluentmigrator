@@ -134,6 +134,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IntegrationTestOptions.cs" />
+    <Compile Include="Integration\Migrations\Umbraco\201012203016_CreateDocumentType.cs" />
     <Compile Include="Integration\PerformDBOperationTests.cs" />
     <Compile Include="Integration\IntegrationTestBase.cs" />
     <Compile Include="Integration\MigrationRunnerTests.cs" />
