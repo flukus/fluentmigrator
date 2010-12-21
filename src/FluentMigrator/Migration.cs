@@ -37,6 +37,8 @@ namespace FluentMigrator
 		public abstract void Up();
 		public abstract void Down();
 
+		protected IMigrationContext Context { get { return _context; } }
+
 		public void ApplyConventions(IMigrationContext context)
 		{
 			foreach (var expression in context.Expressions)
